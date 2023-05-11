@@ -1,5 +1,8 @@
 <?php
 session_start();
+// include('../pages/process/dbh.php');
+
+
 ?>
 
 <head>
@@ -40,23 +43,26 @@ session_start();
 
     <nav class="navbar">
         <a href="home.php">home</a>
-        <a href="pages/department.php">department</a>
+        <!-- <a href="pages/department.php">department</a> -->
+        <div class="dropdown">
+            <!-- <span>Department</span> -->
+            <a href="">department</a>
+            <div class="dropdown-content">
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=IT">IT</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=CSE">CSE</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=Creative">Creative</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=SpaceTeach">SpaceTech</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=NetworkSecurity">NetworkSecurity</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=Defense">Defense</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=AI">AI</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=NLP">NLP</a> </div>
+                <div><a href="http://localhost:8888/1/pages/privateEmploy.php?name=Management">Management</a> </div>
+            </div>
+        </div>
         <a href="manage.php">manage</a>
         <a href="login.php">login</a>
     </nav>
-
-    <div class="dropdown">
-        <span>Mouse over me</span>
-        <div class="dropdown-content">
-            <a href="http://localhost:8888/1/pages/aloginwel.php?manageid=1">Department 1</a>
-            <a href="http://localhost:8888/1/pages/aloginwel.php?manageid=2">Department 1</a>
-            <a href="http://localhost:8888/1/pages/aloginwel.php?manageid=3">Department 1</a>
-            <a href="http://localhost:8888/1/pages/aloginwel.php?manageid=4">Department 1</a>
-        </div>
-    </div>
-
     <div id="menu-btn" class="fas fa-bars"></div>
-
 </section>
 
 <!-- Login UI
